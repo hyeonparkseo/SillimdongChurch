@@ -2338,7 +2338,6 @@ input, select, textarea {
 			}
 
 /* Nav */
-
 	body {
 		padding-top: 3.25em;
 	}
@@ -2358,7 +2357,9 @@ input, select, textarea {
 		font-weight: 700;
 		text-transform: uppercase;
 		cursor: default;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	}
+		
 
 		#nav ul {
 			position: relative;
@@ -2370,21 +2371,16 @@ input, select, textarea {
 			margin: 0 0.5em 0 0.5em;
 			top: 0;
 			position: relative;
-			-moz-transition: top .15s ease-in-out;
-			-webkit-transition: top .15s ease-in-out;
-			-o-transition: top .15s ease-in-out;
-			-ms-transition: top .15s ease-in-out;
 			transition: top .15s ease-in-out;
 		}
-
+			
+			
 			#nav li > ul {
 				display: none;
 			}
 
-			#nav li a, #nav li span {
-				-moz-transition: background-color .075s ease-in-out, color .075s ease-in-out;
-				-webkit-transition: background-color .075s ease-in-out, color .075s ease-in-out;
-				-ms-transition: background-color .075s ease-in-out, color .075s ease-in-out;
+			#nav li a,
+			#nav li span {
 				transition: background-color .075s ease-in-out, color .075s ease-in-out;
 				position: relative;
 				display: block;
@@ -2397,16 +2393,15 @@ input, select, textarea {
 				outline: 0;
 			}
 
-			#nav li:hover, #nav li.active {
+			#nav li:hover,
+			#nav li.active {
 				top: 3px;
 			}
 
-			#nav li:hover a, #nav li:hover span {
-				background: #C1CAC5;
-				color: #fff;
-			}
-
-			#nav li.active a, #nav li.active span {
+			#nav li:hover a,
+			#nav li:hover span,
+			#nav li.active a,
+			#nav li.active span {
 				background: #C1CAC5;
 				color: #fff;
 			}
@@ -2415,7 +2410,14 @@ input, select, textarea {
 				background: #b1ddab;
 				color: #fff;
 			}
-
+	.img {
+		float: left; /* 이미지를 왼쪽으로 정렬합니다 */
+		margin-left: 100px; /* 좌측 여백을 조정할 수 있습니다 */
+		height: 100px; /* 이미지의 높이를 자동으로 조정합니다 */
+		max-width: 100px; /* 이미지의 최대 너비를 설정합니다 */
+		/*padding: 5px; /* 이미지 주변에 여백을 줍니다 */
+	}
+			
 	.dropotron {
 		list-style: none;
 		background: #6B7770;
@@ -2437,19 +2439,18 @@ input, select, textarea {
 			padding-left: 0;
 		}
 
-			.dropotron li > a, .dropotron li > span {
+			.dropotron li > a,
+			.dropotron li > span {
 				display: block;
 				color: #D7DAD8;
 				text-decoration: none;
 				padding: 0 1.25em;
 			}
 
-			.dropotron li:hover > a, .dropotron li:hover > span {
-				color: #fff;
-				background: #7B8780;
-			}
-
-			.dropotron li.active > a, .dropotron li.active > span {
+			.dropotron li:hover > a,
+			.dropotron li:hover > span,
+			.dropotron li.active > a,
+			.dropotron li.active > span {
 				color: #fff;
 				background: #7B8780;
 			}
@@ -2473,6 +2474,8 @@ input, select, textarea {
 				border-left: solid 1em transparent;
 				border-right: solid 1em transparent;
 			}
+
+
 
 /* Banner */
 
