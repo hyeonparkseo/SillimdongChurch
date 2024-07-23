@@ -1757,12 +1757,14 @@ input, select, textarea {
 			display: block;
 			width: 100%;
 		}
-
+		
 		.image.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
+			display: block; /* 이미지를 블록 요소로 설정하여 다른 요소와 줄을 바꾸지 않도록 합니다. */
+			max-width: 100%; /* 최대 너비를 부모 요소의 너비에 맞추어 이미지가 넘치지 않도록 합니다. */
+			height: auto; /* 이미지의 높이를 자동으로 조정하여 비율을 유지합니다. */
+			margin: 0 auto; /* 가운데 정렬합니다. */
 		}
+		
 
 		.image.left {
 			float: left;
@@ -3092,6 +3094,10 @@ input, select, textarea {
 				border-left: 0;
 				padding-left: 0;
 				line-height: 1.75em;
+			}
+		/* uplist */
+			#uplist {
+				display: none;
 			}
 
 	}
