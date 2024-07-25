@@ -2480,15 +2480,14 @@ input, select, textarea {
 
 
 /* Banner */
-
 #banner {
     position: relative; /* 부모 요소를 상대 위치로 설정 */
-	width: 100%; /* 배너 너비를 전체 너비로 설정 */
+    width: 100%; /* 배너 너비를 전체 너비로 설정 */
     height: 50vh; /* 배너 높이를 뷰포트 높이의 50%로 설정 */
     background-image: url("../../images/podo.jpg");
     background-position: center center;
-    background-repeat: repeat ;
-    background-size: cover ;
+    background-repeat: no-repeat; /* 반복하지 않음 */
+    background-size: cover; /* 요소를 덮도록 배경 이미지 크기 조정 */
     z-index: 1;
     padding: 25em 0;
 }
@@ -2507,43 +2506,52 @@ input, select, textarea {
     padding: 1.5em 0 2.5em 0;
 }
 
-			#banner .content h2 {
-				color: #fff;
-				font-size: 2.75em;
-				margin: 0 0 0.5em 0;
-			}
+/* 배너 콘텐츠 텍스트 스타일 */
+#banner .content h2 {
+    color: #fff;
+    font-size: 2.75em;
+    margin: 0 0 0.5em 0;
+}
 
-			#banner .content p {
-				display: block;
-				font-family: 'Open Sans Condensed', sans-serif;
-				font-weight: 700;
-				text-transform: uppercase;
-				color: #ffffff9d;
-				font-size: 1.35em;
-				margin: 0 0 1.25em 0;
-			}
+#banner .content p {
+    display: block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff9d;
+    font-size: 1.35em;
+    margin: 0 0 1.25em 0;
+}
 
-			#banner .content .button {
-				-moz-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-				-webkit-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-				-ms-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-				transition: border-color .2s ease-in-out, color .2s ease-in-out;
-				color: #e2e2e2;
-				background: transparent !important;
-				border: solid 4px #d5d8d6;
-				border-color: rgba(255, 255, 255, 0.788);
-				font-size: 1.5em;
-			}
+#banner .content .button {
+    -moz-transition: border-color .2s ease-in-out, color .2s ease-in-out;
+    -webkit-transition: border-color .2s ease-in-out, color .2s ease-in-out;
+    -ms-transition: border-color .2s ease-in-out, color .2s ease-in-out;
+    transition: border-color .2s ease-in-out, color .2s ease-in-out;
+    color: #e2e2e2;
+    background: transparent !important;
+    border: solid 4px #d5d8d6;
+    border-color: rgba(255, 255, 255, 0.788);
+    font-size: 1.5em;
+}
 
-				#banner .content .button:hover {
-					color: #e4e7e5;
-					border-color: rgba(87, 93, 89, 0.75);
-				}
+#banner .content .button:hover {
+    color: #e4e7e5;
+    border-color: rgba(87, 93, 89, 0.75);
+}
 
-				#banner .content .button:active {
-					color: #fff;
-					border-color: #616763;
-				}
+#banner .content .button:active {
+    color: #fff;
+    border-color: #616763;
+}
+
+/* 모바일 화면에서 배너 콘텐츠 숨기기 */
+@media (max-width: 768px) {
+    #banner .content {
+        display: none; /* 모바일 화면에서 콘텐츠 숨기기 */
+    }
+}
+
 
 
 /* Main */
