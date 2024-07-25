@@ -2545,10 +2545,6 @@ input, select, textarea {
 					border-color: #616763;
 				}
 
-/* 모바일 화면에서 배너 콘텐츠 숨기기 */
-@media (max-width: 768px) {
-    #banner .content {
-        display: none; /* 콘텐츠 숨기기 */
 
 /* Main */
 
