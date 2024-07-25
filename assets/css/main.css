@@ -2483,10 +2483,12 @@ input, select, textarea {
 
 #banner {
     position: relative; /* 부모 요소를 상대 위치로 설정 */
+	width: 100%; /* 배너 너비를 전체 너비로 설정 */
+    height: 50vh; /* 배너 높이를 뷰포트 높이의 50%로 설정 */
     background-image: url("../../images/podo.jpg");
     background-position: center center;
-    background-repeat: no-repeat ;
-    background-size: auto ;
+    background-repeat: repeat ;
+    background-size: cover ;
     z-index: 1;
     padding: 25em 0;
 }
