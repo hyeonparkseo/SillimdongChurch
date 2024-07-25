@@ -2507,7 +2507,6 @@ input, select, textarea {
     padding: 1.5em 0 2.5em 0;
 }
 
-
 			#banner .content h2 {
 				color: #fff;
 				font-size: 2.75em;
@@ -2545,6 +2544,11 @@ input, select, textarea {
 					color: #fff;
 					border-color: #616763;
 				}
+
+/* 모바일 화면에서 배너 콘텐츠 숨기기 */
+@media (max-width: 768px) {
+    #banner .content {
+        display: none; /* 콘텐츠 숨기기 */
 
 /* Main */
 
