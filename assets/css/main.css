@@ -1,5 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Open+Sans+Condensed:700");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 /*
 	TXT by HTML5 UP
@@ -16,14 +16,18 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, hgroup, menu, nav, output, ruby,
-section, summary, header, mark, audio, video {
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	font-family: "Noto Sans KR", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -98,7 +102,7 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Open Sans', sans-serif;
+		font-family: "Noto Sans KR", sans-serif;
 		font-weight: 400;
 		color: #6b7770;
 		font-size: 13pt;
@@ -106,7 +110,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: "Noto Sans KR", sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		color: #6b7770;
@@ -206,7 +210,7 @@ input, select, textarea {
 
 	header > p {
 		display: block;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: "Noto Sans KR", sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		color: #c1cac5;
@@ -1790,7 +1794,7 @@ input, select, textarea {
 	.button {
 		-webkit-appearance: none;
 		display: inline-block;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: "Noto Sans KR", sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		text-decoration: none;
@@ -2097,7 +2101,7 @@ input, select, textarea {
 	form label {
 		display: block;
 		margin: 0 0 1em 0;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: "Noto Sans KR", sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		color: #6b7770;
@@ -2182,7 +2186,7 @@ input, select, textarea {
 				text-align: left;
 				padding: 0.5em 1em 0.5em 1em;
 				margin: 0 0 1em 0;
-				font-family: 'Open Sans Condensed', sans-serif;
+				font-family: "Noto Sans KR", sans-serif;
 				font-weight: 700;
 				text-transform: uppercase;
 				color: #6b7770;
@@ -2276,7 +2280,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			font-family: "Noto Sans KR";
 			font-weight: 400;
 		}
 
@@ -2293,7 +2297,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: "Noto Sans KR";
 		}
 
 /* Page Wrapper */
@@ -2306,11 +2310,11 @@ input, select, textarea {
 
 	#header {
 		text-align: center;
-		font-size: 3em;
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-weight: 800;
+		font-size: 2em;
+		font-family: "Noto Sans KR", sans-serif;
+		font-weight: 700;
 		text-transform: uppercase;
-		padding: 1em 0;
+		padding: 2em 0;
 		background: #fff;
 		margin: 0 auto;
 	}
@@ -2355,7 +2359,7 @@ input, select, textarea {
 		height: 3.25em;
 		line-height: 3.25em;
 		text-align: center;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: "Noto Sans KR", sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		cursor: default;
@@ -2427,7 +2431,7 @@ input, select, textarea {
 		border-radius: 6px;
 		line-height: 2.75em;
 		text-align: center;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: "Noto Sans KR", sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		padding: 1em 0;
@@ -2480,79 +2484,65 @@ input, select, textarea {
 
 
 /* Banner */
-#banner {
-    position: relative; /* 부모 요소를 상대 위치로 설정 */
-    width: 100%; /* 배너 너비를 전체 너비로 설정 */
-    height: 50vh; /* 배너 높이를 뷰포트 높이의 50%로 설정 */
-    background-image: url("../../images/podo.jpg");
-    background-position: center center;
-    background-repeat: no-repeat; /* 반복하지 않음 */
-    background-size: cover; /* 요소를 덮도록 배경 이미지 크기 조정 */
-    z-index: 1;
-    padding: 25em 0;
-}
 
-#banner .content {
-    position: absolute; /* 콘텐츠를 절대 위치로 설정 */
-    bottom: 0;          /* 배너의 하단에 배치 */
-    left: 0;            /* 왼쪽에 맞춤 */
-    width: 100%;        /* 배너의 전체 너비를 차지 */
-    background-color: rgba(21, 28, 23, 0.5);
-    background-position: top left, center center;
-    background-size: auto, 100% 250%;
-    background-repeat: repeat, no-repeat;
-    text-align: center;
-    margin: 0;
-    padding: 1.5em 0 2.5em 0;
-}
+	#banner {
+		position: relative;
+		background-image: url("../../images/prayer.jpg");
+		background-position: top left, top left, center center;
+		background-repeat: repeat, repeat, no-repeat;
+		background-size: auto, auto, cover;
+		z-index: 1;
+		padding: 11em 0;
+	}
 
-/* 배너 콘텐츠 텍스트 스타일 */
-#banner .content h2 {
-    color: #fff;
-    font-size: 2.75em;
-    margin: 0 0 0.5em 0;
-}
+		#banner .content {
+			position: relative;
+			background-color: rgba(21, 28, 23, 0.85);
+			background-position: top left, center center;
+			background-size: auto, 100% 250%;
+			background-repeat: repeat, no-repeat;
+			text-align: center;
+			margin: 0;
+			padding: 4em 0 3.5em 0;
+		}
 
-#banner .content p {
-    display: block;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ffffff9d;
-    font-size: 1.35em;
-    margin: 0 0 1.25em 0;
-}
+			#banner .content h2 {
+				color: #fff;
+				font-size: 2.75em;
+				margin: 0 0 0.5em 0;
+			}
 
-#banner .content .button {
-    -moz-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-    -webkit-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-    -ms-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-    transition: border-color .2s ease-in-out, color .2s ease-in-out;
-    color: #e2e2e2;
-    background: transparent !important;
-    border: solid 4px #d5d8d6;
-    border-color: rgba(255, 255, 255, 0.788);
-    font-size: 1.5em;
-}
+			#banner .content p {
+				display: block;
+				font-family: "Noto Sans KR", sans-serif;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: #575d59;
+				font-size: 1.35em;
+				margin: 0 0 1.25em 0;
+			}
 
-#banner .content .button:hover {
-    color: #e4e7e5;
-    border-color: rgba(87, 93, 89, 0.75);
-}
+			#banner .content .button {
+				-moz-transition: border-color .2s ease-in-out, color .2s ease-in-out;
+				-webkit-transition: border-color .2s ease-in-out, color .2s ease-in-out;
+				-ms-transition: border-color .2s ease-in-out, color .2s ease-in-out;
+				transition: border-color .2s ease-in-out, color .2s ease-in-out;
+				color: #b4b7b5;
+				background: transparent !important;
+				border: solid 4px #575d59;
+				border-color: rgba(87, 93, 89, 0.35);
+				font-size: 1.5em;
+			}
 
-#banner .content .button:active {
-    color: #fff;
-    border-color: #616763;
-}
+				#banner .content .button:hover {
+					color: #e4e7e5;
+					border-color: rgba(87, 93, 89, 0.75);
+				}
 
-/* 모바일 화면에서 배너 콘텐츠 숨기기 */
-@media (max-width: 768px) {
-    #banner .content {
-        display: none; /* 모바일 화면에서 콘텐츠 숨기기 */
-    }
-}
-
-
+				#banner .content .button:active {
+					color: #fff;
+					border-color: #616763;
+				}
 
 /* Main */
 
@@ -2802,7 +2792,7 @@ input, select, textarea {
 				#titleBar .title {
 					display: block;
 					position: relative;
-					font-family: 'Open Sans Condensed', sans-serif;
+					font-family: "Noto Sans KR", sans-serif;
 					font-weight: 700;
 					text-transform: uppercase;
 					font-size: 1.25em;
@@ -2883,7 +2873,7 @@ input, select, textarea {
 				background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% 100%;
-				font-family: 'Open Sans Condensed', sans-serif;
+				font-family: "Noto Sans KR", sans-serif;
 				font-weight: 700;
 				text-transform: uppercase;
 				font-size: 1.25em;
