@@ -1,4 +1,5 @@
 @import url("fontawesome-all.min.css");
+@import url("https://use.fontawesome.com/releases/v6.0.0/css/all.css");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 /*
@@ -2263,6 +2264,72 @@ input, select, textarea {
 		margin: 0 0 0.5em 0;
 	}
 
+/*contact-icon*/
+ul.box.contact-icon li {
+	display: inline-block;
+	margin-left: 1em;
+	padding-left: 0;
+	text-decoration: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	text-transform: none !important;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 400;
+	font-size: 3em; /* Match this to h1's font-size */
+}
+
+ul.box.contact-icon li > a {
+	display: inline-block;
+	margin-left: 1em;
+	padding-left: 0;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	text-transform: none !important;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 400;
+	font-size: 1em; /* Set a base font size */
+}
+
+ul.box.contact-icon h1 {
+	display: inline-block;
+	margin-left: 1em;
+	padding-left: 0;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	text-transform: none !important;
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 400;
+	font-size: 2em; /* Set a base font size */
+}
+
+ul.box.contact-icon:before {
+	display: inline-block;
+	margin-left: 1em;
+	padding-left: 0;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	text-transform: none !important;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 400;
+	font-size: 1em; /* Set a base font size */
+}
+
 /* Icons */
 
 	.icon {
@@ -2280,7 +2347,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: "Noto Sans KR";
+			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
 		}
 
@@ -2297,7 +2364,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: "Noto Sans KR";
+			font-family: 'Font Awesome 5 Free';
 		}
 
 /* Page Wrapper */
