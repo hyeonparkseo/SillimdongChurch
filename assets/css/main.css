@@ -2627,12 +2627,13 @@ ul.box.contact-icon:before {
         align-items: center; /* 가로 중앙 정렬 */
         justify-content: flex-end; /* 버튼을 맨 밑에 배치 */
         font-weight: 700;
-        font-size: 1em; /* 기본 폰트 크기 설정 */
+        font-size: 1.2em; /* 폰트 크기를 2배로 설정 */
+        line-height: 1.2; /* 줄 간격을 줄임 */
         background: linear-gradient(to top, rgba(21, 28, 23, 0.75), rgba(21, 28, 23, 0)); /* 투명도 그라데이션 적용 */
     }
 
     #banner .content .button {
-        font-size: 1.6em; /* 버튼 폰트 크기 조정 (2em에서 20% 줄임) */
+        font-size: 1.1em; /* 버튼 폰트 크기 2배로 조정 */
         padding: 0.5em 1em; /* 버튼 패딩 조정 */
         border-width: 2px; /* 버튼 테두리 두께 조정 */
         max-width: 50%; /* 버튼의 최대 가로 길이를 50%로 설정 */
@@ -2640,13 +2641,15 @@ ul.box.contact-icon:before {
     }
 
     #banner .content .quote {
-        font-size: 0.5em; /* 텍스트 폰트 크기를 50%로 줄임 */
+        font-size: 1em; /* 텍스트 폰트 크기를 2배로 조정 */
+        line-height: 1.2; /* 줄 간격을 줄임 */
         color: #fff; /* 텍스트 색상 설정 */
         text-align: center; /* 텍스트 가운데 정렬 */
         margin-top: 1em; /* 버튼과 텍스트 사이의 간격 설정 */
-        padding: 0 1em; /* 좌우 패딩 추가 */
+        padding: -1em; /* 좌우 패딩 추가 */
     }
 }
+
 
 
 
