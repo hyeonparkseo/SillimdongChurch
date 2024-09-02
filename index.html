@@ -66,12 +66,37 @@
 			<!-- Banner -->
 				<section id="banner">
 					<div class="content">
-						<div class="quote">
-						<p>하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니 <br>이는 그를 믿는 자마다 멸망하지 않고 영생을 얻게 하려 하심이라.<br>요한복음 3:16</p>
+					<div class="quote">
+						<p id="quote-text">
+							하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니 이는 그를 믿는 자마다 멸망하지 않고 영생을 얻게 하려 하심이라. 요한복음 3:16
+						  </p>
+						  
+						  <script>
+							function adjustTextForScreenSize() {
+							  var quoteText = document.getElementById("quote-text");
+						  
+							  if (window.innerWidth <= 768) {  // 모바일 화면 체크
+								quoteText.innerHTML = 
+								  "하나님이 세상을 이처럼 사랑하사<br>독생자를 주셨으니<br>이는 그를 믿는 자마다 멸망하지 않고<br>영생을 얻게 하려 하심이라.<br>요한복음 3:16";
+							  } else {  // PC 화면 체크
+								quoteText.innerHTML = 
+								  "하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니<br>이는 그를 믿는 자마다 멸망하지 않고 <영생을 얻게 하려 하심이라.<br>요한복음 3:16";
+							  }
+							}
+						  
+							// 초기 로드 시 화면 크기에 따른 텍스트 조정
+							adjustTextForScreenSize();
+						  
+							// 화면 크기가 변경될 때마다 텍스트 조정
+							window.addEventListener('resize', adjustTextForScreenSize);
+						  </script>
+						  
+
 						<a href="#main" class="button scrolly">시작하기</a>
 					</div>
 					</div>
 				</section>
+  
 				
 
 			<!-- Main -->

@@ -2003,7 +2003,7 @@ input, select, textarea {
 		padding-left: 0;
 		cursor: default;
 		position: relative;
-		margin: -2em 0 4em -2em;
+		margin: none;
 	}
 
 		ul.special li {
@@ -2014,7 +2014,7 @@ input, select, textarea {
 			position: relative;
 			display: inline-block;
 			top: 0;
-			padding: 2em 0 0 2em;
+			padding: none;
 		}
 
 			ul.special li a {
@@ -2030,16 +2030,16 @@ input, select, textarea {
 					display: block;
 					text-align: center;
 					background: #c1cac5;
-					border-radius: 100%;
-					width: 2.25em;
-					height: 2.25em;
+					border-radius: 60%;
+					width: 3em;
+					height: 3em;
 					line-height: 2.175em;
 					font-size: 5em;
 					color: #fff;
 				}
 
 			ul.special li:hover {
-				top: -1em;
+				top: -0.5em;
 			}
 
 				ul.special li:hover a:before {
@@ -2647,7 +2647,9 @@ ul.box.contact-icon:before {
         text-align: center; /* 텍스트 가운데 정렬 */
         margin-top: 1em; /* 버튼과 텍스트 사이의 간격 설정 */
         padding: -1em; /* 좌우 패딩 추가 */
-    }
+    } 
+
+
 }
 
 
