@@ -2023,6 +2023,8 @@ input, select, textarea {
 		cursor: default;
 		position: relative;
 		margin: none;
+		list-style: none;
+		text-align: center;
 	}
 
 		ul.special li {
@@ -2034,11 +2036,16 @@ input, select, textarea {
 			display: inline-block;
 			top: 0;
 			padding: none;
+			margin: 20px;
+			text-align: center;
 		}
 
 			ul.special li a {
 				display: block;
 				outline: 0;
+				justify-content: center;  /* 수평 가운데 정렬 */
+				align-items: center;  /* 수직 가운데 정렬 */
+			
 			}
 
 				ul.special li a:before {
@@ -2052,9 +2059,16 @@ input, select, textarea {
 					border-radius: 60%;
 					width: 3em;
 					height: 3em;
-					line-height: 2.175em;
+					line-height: 3em;
 					font-size: 5em;
 					color: #fff;
+				}
+
+				ul.special li a span.label {
+					display: block;  /* 텍스트를 블록으로 만들어 아이콘 아래에 배치 */
+					margin-top: 10px;  /* 아이콘과 텍스트 사이에 여백 추가 */
+					font-size: 14px;  /* 텍스트 크기 조정 */
+					font-weight: bold;
 				}
 
 			ul.special li:hover {
