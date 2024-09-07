@@ -2019,7 +2019,7 @@ input, select, textarea {
 
 	ul.special {
 		list-style: none;
-		padding-left: 0;
+		padding: none;
 		cursor: default;
 		position: relative;
 		margin: none;
@@ -2027,18 +2027,26 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	ul.special li {
+		-moz-transition: top .15s ease-in-out;
+		-webkit-transition: top .15s ease-in-out;
+		-ms-transition: top .15s ease-in-out;
+		transition: top .15s ease-in-out;
+		position: relative;
+		display: inline-block;
+		top: 0;
+		padding: none;
+		margin: 20px;
+		text-align: center;
+	}
+	
+	/* 모바일 화면에서 마진을 5px로 설정 */
+	@media (max-width: 768px) {
 		ul.special li {
-			-moz-transition: top .15s ease-in-out;
-			-webkit-transition: top .15s ease-in-out;
-			-ms-transition: top .15s ease-in-out;
-			transition: top .15s ease-in-out;
-			position: relative;
-			display: inline-block;
-			top: 0;
-			padding: none;
-			margin: 20px;
-			text-align: center;
+			margin: 5px;
 		}
+	}
+	
 
 			ul.special li a {
 				display: block;
@@ -2057,8 +2065,8 @@ input, select, textarea {
 					text-align: center;
 					background: #c1cac5;
 					border-radius: 60%;
-					width: 3em;
-					height: 3em;
+					width: 2.5em;
+					height: 2.5em;
 					line-height: 3em;
 					font-size: 5em;
 					color: #fff;
@@ -2378,7 +2386,7 @@ ul.box.contact-icon:before {
 			font-style: normal;
 			font-variant: normal;
 			text-rendering: auto;
-			line-height: 1;
+			line-height: 2;
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
@@ -2652,6 +2660,12 @@ ul.box.contact-icon:before {
 	
 /* 모바일 화면에서 배너 콘텐츠 조정 */
 @media (max-width: 768px) {
+
+	#quote-text {
+        width: 385px; /* 가로 길이를 385px로 설정 */
+        margin: 0 auto; /* 가운데 정렬을 위해 좌우 마진을 자동으로 설정 */
+    }
+	
     #banner .content {
         height: 75%; /* 모바일 화면에서 콘텐츠 높이를 배너의 75%로 설정 */
         padding: 0; /* 패딩을 0으로 설정하여 콘텐츠가 잘리거나 겹치지 않도록 함 */
@@ -2660,8 +2674,8 @@ ul.box.contact-icon:before {
         align-items: center; /* 가로 중앙 정렬 */
         justify-content: flex-end; /* 버튼을 맨 밑에 배치 */
         font-weight: 700;
-        font-size: 1.2em; /* 폰트 크기를 2배로 설정 */
-        line-height: 1.2; /* 줄 간격을 줄임 */
+        font-size: 0.85em; /* 폰트 크기를 2배로 설정 */
+        line-height: 0.7; /* 줄 간격을 줄임 */
         background: linear-gradient(to top, rgba(21, 28, 23, 0.75), rgba(21, 28, 23, 0)); /* 투명도 그라데이션 적용 */
     }
 
@@ -2679,7 +2693,7 @@ ul.box.contact-icon:before {
         color: #fff; /* 텍스트 색상 설정 */
         text-align: center; /* 텍스트 가운데 정렬 */
         margin-top: 1em; /* 버튼과 텍스트 사이의 간격 설정 */
-        padding: -1em; /* 좌우 패딩 추가 */
+        padding: none; 
     } 
 
 
