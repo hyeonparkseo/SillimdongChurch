@@ -2067,7 +2067,7 @@ input, select, textarea {
 					border-radius: 60%;
 					width: 2.5em;
 					height: 2.5em;
-					line-height: 3em;
+					line-height: 2.5em;
 					font-size: 5em;
 					color: #fff;
 				}
@@ -3277,3 +3277,43 @@ ul.box.contact-icon:before {
 			}
 
 	}
+
+	.custom-schedule-table-container {
+		width: 100%;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	
+	.custom-schedule-table {
+		width: 100%;
+		border-collapse: collapse;
+		text-align: center;
+		font-family: 'Arial', sans-serif;
+	}
+	
+	.custom-schedule-table th, .custom-schedule-table td {
+		border: 1px solid #999;
+		padding: 10px;
+	}
+	
+	.custom-schedule-table th {
+		background-color: #f2f2f2;
+		font-weight: bold;
+	}
+	
+	.custom-schedule-table tr:nth-child(even) {
+		background-color: #f9f9f9;
+	}
+	
+	.custom-schedule-table td {
+		vertical-align: middle;
+	}
+	
+	.custom-schedule-table tr td:first-child {
+		font-weight: bold;
+	}
+	
+	.custom-schedule-table tbody tr:hover {
+		background-color: #d1e7dd;
+	}
+	
