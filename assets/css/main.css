@@ -27,8 +27,8 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;
 	font-family: "Noto Sans KR", sans-serif;
 	font-optical-sizing: auto;
-	font-weight: <weight>;
-	font-style: normal;}
+	/*font-weight: <weight>;
+	font-style: normal;*/}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
